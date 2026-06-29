@@ -1166,7 +1166,7 @@
   <div class="top-bar">
     <h1>
       <span class="icon">🏫</span>
-      LEADERS PUBLIC SCHOOL - LEADERS
+      ABC DEMO SCHOOL SYSTEM - ABC SCHOOL
       <small>Success With Wisdom - Fee Management System</small>
     </h1>
     <div class="top-stats">
@@ -1955,7 +1955,7 @@
       const s = getStudent(id);
       if (!s) return;
       let msg = '═══════════════════════════════════════\n';
-      msg += `  🏫 LEADERS PUBLIC SCHOOL - ACCOUNT STATEMENT\n`;
+      msg += `  🏫 ABC DEMO SCHOOL SYSTEM - ACCOUNT STATEMENT\n`;
       msg += '═══════════════════════════════════════\n\n';
       msg += `👤 ${s.name} (${s.id})\n👨 Father: ${s.father}\n📚 Class: ${s.class} (${s.section||'A'})\n📱 Phone: ${s.phone||'N/A'}\n📍 Address: ${s.address||'N/A'}\n`;
       msg += '───────────────────────────────────────\n\n';
@@ -2318,7 +2318,7 @@
         <body>
           <div class="admission-form">
             <div class="header">
-              <h1>🏫 LEADERS PUBLIC SCHOOL</h1>
+              <h1>🏫 ABC DEMO SCHOOL SYSTEM</h1>
               <h2>Student Admission Form</h2>
               <p style="color: #666; font-size: 12px; margin: 5px 0;">Success With Wisdom</p>
             </div>
@@ -2432,7 +2432,7 @@
       if (!a) { showToast('⚠️ Record not found!', true); return; }
       
       let msg = '═══════════════════════════════════════\n';
-      msg += `  🏫 LEADERS PUBLIC SCHOOL - ADMISSION RECORD\n`;
+      msg += `  🏫 ABC DEMO SCHOOL SYSTEM - ADMISSION RECORD\n`;
       msg += '═══════════════════════════════════════\n\n';
       msg += `👤 Name: ${a.name}\n👨 Father: ${a.father}\n👩 Mother: ${a.mother || 'N/A'}\n📚 Class: ${a.class} (${a.section || 'A'})\n📱 Phone: ${a.phone || 'N/A'}\n📍 Address: ${a.address || 'N/A'}\n📅 DOB: ${a.dob || 'N/A'}\n⚥ Gender: ${a.gender || 'N/A'}\n🔢 Roll No: ${a.roll || 'N/A'}\n📆 Admission Date: ${a.admissionDate || 'N/A'}\n🏫 Previous School: ${a.prevSchool || 'N/A'}\n`;
       msg += '\n💰 FEE DETAILS\n───────────────────────────────────────\n';
@@ -2831,7 +2831,7 @@
       
       let html = `<div style="font-family:Arial,sans-serif;padding:30px;max-width:900px;margin:auto;">
         <div style="text-align:center;border-bottom:3px solid #1a237e;padding-bottom:15px;margin-bottom:20px;">
-          <h1 style="color:#1a237e;font-size:24px;">🏫 LEADERS PUBLIC SCHOOL</h1>
+          <h1 style="color:#1a237e;font-size:24px;">🏫 ABC DEMO SCHOOL SYSTEM</h1>
           <h2 style="color:#f39c12;font-size:18px;">Timetable - ${cls} (${sec})</h2>
         </div>
         <table style="width:100%;border-collapse:collapse;font-size:13px;">
@@ -2926,7 +2926,7 @@
         fees += `<div class="voucher-row" style="color:#27ae60;"><span>✅ Amount Paid</span><span>${formatCurrency(paid)}</span></div>`;
         const remarksHtml = remarks ? `<div class="voucher-remarks"><strong>📝 Remarks:</strong> ${remarks}</div>` : '';
         const addressHtml = s.address ? `<div class="address-line">📍 ${s.address}</div>` : '';
-        html += `<div class="voucher-preview"><div class="voucher-header"><h2>🏫 LEADERS PUBLIC SCHOOL</h2><div class="sub">FEE VOUCHER</div></div>
+        html += `<div class="voucher-preview"><div class="voucher-header"><h2>🏫 ABC DEMO SCHOOL SYSTEM</h2><div class="sub">FEE VOUCHER</div></div>
           <div class="voucher-detail"><div><span class="label">ID:</span> <span class="value">${s.id}</span></div>
           <div><span class="label">Name:</span> <span class="value">${s.name}</span></div>
           <div><span class="label">Father:</span> <span class="value">${s.father}</span></div>
@@ -2936,7 +2936,7 @@
           <div style="grid-column:1/-1;"><span class="label">Address:</span> <span class="value">${s.address||'N/A'}</span></div></div>
           ${addressHtml}
           <div class="voucher-fee">${fees}${remarksHtml}<div class="voucher-total"><span>📊 DUE BALANCE</span><span>${formatCurrency(balance)}</span></div></div>
-          <div style="background:yellow;padding:10px;border-radius:8px;margin-top:12px;font-size:12px;text-align:center;">💳 Mobile No 03315176499</div>
+          <div style="background:yellow;padding:10px;border-radius:8px;margin-top:12px;font-size:12px;text-align:center;">💳 Mobile No 00000</div>
           <div class="voucher-footer">🎓 Success with Wisdom!</div></div>`;
       });
       html += '</body></html>';
@@ -2998,7 +2998,7 @@
       fees += `<div class="voucher-row" style="color:var(--success);"><span>✅ Amount Paid</span><span>${formatCurrency(paid)}</span></div>`;
       const remarksHtml = remarks ? `<div class="voucher-remarks"><strong>📝 Remarks:</strong> ${remarks}</div>` : '';
       const addressHtml = s.address ? `<div class="voucher-detail" style="grid-template-columns:1fr;padding:4px 16px;margin-top:4px;"><div><span class="label">📍 Address:</span> <span class="value">${s.address}</span></div></div>` : '';
-      container.innerHTML = `<div class="voucher-preview"><div class="voucher-header"><h2>LEADERS PUBLIC SCHOOL</h2><div class="sub">FEE VOUCHER</div></div>
+      container.innerHTML = `<div class="voucher-preview"><div class="voucher-header"><h2>ABC DEMO SCHOOL SYSTEM</h2><div class="sub">FEE VOUCHER</div></div>
         <div class="voucher-detail"><div><span class="label">ID:</span> <span class="value">${s.id}</span></div>
         <div><span class="label">Name:</span> <span class="value">${s.name}</span></div>
         <div><span class="label">Father:</span> <span class="value">${s.father}</span></div>
@@ -3007,7 +3007,7 @@
         <div><span class="label">Month:</span> <span class="value">${month} ${year}</span></div></div>
         ${addressHtml}
         <div class="voucher-fee">${fees}${remarksHtml}<div class="voucher-total"><span>📊 DUE BALANCE</span><span>${formatCurrency(balance)}</span></div></div>
-        <div style="background:Blue;padding:10px;border-radius:8px;margin-top:12px;font-size:18px;text-align:center;color:White;">💳 Mobile No 03315176499</div>
+        <div style="background:Blue;padding:10px;border-radius:8px;margin-top:12px;font-size:18px;text-align:center;color:White;">💳 Mobile No 000000</div>
         <div class="voucher-footer">🎓 Success with Wisdom! Call for Software 03012916626</div></div>`;
     }
 
@@ -3048,7 +3048,7 @@
       const remarks = document.getElementById('voucherRemarks').value.trim();
       let monthly=0, exam=0, other=0, previousFee=0, paid=0, balance=0, total=0;
       if (d) { monthly=d.monthly_fee||0; exam=d.exam_fee||0; other=d.other_fee||0; previousFee=d.previous_fee||0; paid=d.paid||0; balance=d.balance||0; total=monthly+exam+other+previousFee; }
-      let msg = `🏫 *LEADERS PUBLIC SCHOOL*\n🧾 *FEE VOUCHER*\n📅 ${month} ${year}\n\n👤 *${s.name}* (${s.id})\n👨 Father: ${s.father}\n📚 Class: ${s.class} (${s.section||'A'})\n📍 Address: ${s.address||'N/A'}\n\n💰 *FEE BREAKDOWN*\n────────────────────\n`;
+      let msg = `🏫 *ABC DEMO SCHOOL SYSTEM*\n🧾 *FEE VOUCHER*\n📅 ${month} ${year}\n\n👤 *${s.name}* (${s.id})\n👨 Father: ${s.father}\n📚 Class: ${s.class} (${s.section||'A'})\n📍 Address: ${s.address||'N/A'}\n\n💰 *FEE BREAKDOWN*\n────────────────────\n`;
       if (monthly>0) msg += `Monthly Fee: ${formatCurrency(monthly)}\n`;
       if (exam>0) msg += `Exam Fee: ${formatCurrency(exam)}\n`;
       if (other>0) msg += `Other Fee: ${formatCurrency(other)}\n`;
@@ -3349,7 +3349,7 @@
       const cls = document.getElementById('rpClass').value;
       const sec = document.getElementById('rpSection').value;
       
-      let text = '════════════════════════════════════════════════════════════\n           📝 LEADERS PUBLIC SCHOOL - ADMISSIONS REPORT\n';
+      let text = '════════════════════════════════════════════════════════════\n           📝 ABC DEMO SCHOOL SYSTEM - ADMISSIONS REPORT\n';
       text += `           Generated: ${new Date().toLocaleString()}\n════════════════════════════════════════════════════════════\n\n`;
       
       let admissions = savedAdmissions || [];
@@ -3389,7 +3389,7 @@
     }
 
     function generateFullReport() {
-      let text = '════════════════════════════════════════════════════════════\n           🏫 LEADERS PUBLIC SCHOOL - COMPLETE STATEMENT\n';
+      let text = '════════════════════════════════════════════════════════════\n           🏫 ABC DEMO SCHOOL SYSTEM - COMPLETE STATEMENT\n';
       text += `           Generated: ${new Date().toLocaleString()}\n════════════════════════════════════════════════════════════\n\n`;
       let totalStudents = students.length, totalCollected=0, totalDue=0, totalPrevious=0;
       students.forEach(s => { if (monthlyData[s.id]) { for (const mk in monthlyData[s.id]) { const d = monthlyData[s.id][mk]; totalCollected += d.paid||0; totalDue += d.balance||0; totalPrevious += d.previous_fee||0; } } });
@@ -3405,7 +3405,7 @@
     function generateMonthlyReport() {
       const month = document.getElementById('rpMonth').value;
       const year = document.getElementById('rpYear').value;
-      let text = '════════════════════════════════════════════════════════════\n           📆 LEADERS PUBLIC SCHOOL - MONTHLY REPORT\n';
+      let text = '════════════════════════════════════════════════════════════\n           📆 ABC DEMO SCHOOL SYSTEM - MONTHLY REPORT\n';
       text += `           ${month} ${year}\n════════════════════════════════════════════════════════════\n\n`;
       let filtered = transactions;
       if (month !== 'All Months') filtered = filtered.filter(t => t.month === month);
@@ -3425,7 +3425,7 @@
     function generateDefaulterReport() {
       const month = document.getElementById('rpMonth').value;
       const year = document.getElementById('rpYear').value;
-      let text = '════════════════════════════════════════════════════════════\n           ⚠️ LEADERS PUBLIC SCHOOL - DEFAULTER REPORT\n';
+      let text = '════════════════════════════════════════════════════════════\n           ⚠️ ABC DEMO SCHOOL SYSTEM - DEFAULTER REPORT\n';
       text += `           ${month} ${year}\n════════════════════════════════════════════════════════════\n\n`;
       let defaulters = [];
       students.forEach(s => { let totalBalance=0; if (monthlyData[s.id]) { for (const mk in monthlyData[s.id]) { if (month !== 'All Months') { const [m,y] = mk.split(' '); if (m !== month || y !== year) continue; } totalBalance += monthlyData[s.id][mk].balance||0; } } if (totalBalance > 0) defaulters.push({...s, due: totalBalance}); });
@@ -3439,7 +3439,7 @@
     function generateClassReport() {
       const cls = document.getElementById('rpClass').value;
       const sec = document.getElementById('rpSection').value;
-      let text = '════════════════════════════════════════════════════════════\n           📚 LEADERS PUBLIC SCHOOL - CLASS SUMMARY\n';
+      let text = '════════════════════════════════════════════════════════════\n           📚 ABC DEMO SCHOOL SYSTEM - CLASS SUMMARY\n';
       text += `           ${cls} ${sec !== 'All Sections' ? '('+sec+')' : ''}\n════════════════════════════════════════════════════════════\n\n`;
       let filteredStudents = students;
       if (cls !== 'All Classes') filteredStudents = filteredStudents.filter(s => s.class === cls);
@@ -3469,7 +3469,7 @@
       else if (type === 'class') title = 'Class Summary';
       else if (type === 'full') title = 'Complete Statement';
       else if (type === 'admissions') title = 'Admissions Report';
-      const html = `<div style="font-family:Arial,sans-serif;padding:30px;background:#fff;"><div style="text-align:center;border-bottom:3px solid #1a237e;padding-bottom:15px;margin-bottom:25px;"><h1 style="color:#1a237e;font-size:28px;">🏫 LEADERS PUBLIC SCHOOL</h1><h2 style="color:#f39c12;font-size:20px;">${title}</h2><p style="color:#666;font-size:12px;">Generated: ${new Date().toLocaleString()}</p></div><pre style="font-family:'Courier New',monospace;font-size:14px;white-space:pre-wrap;line-height:1.5;background:#f8f9fa;padding:20px;border-radius:8px;border:1px solid #e0e0e0;">${content}</pre><div style="text-align:center;color:#888;font-size:11px;margin-top:25px;border-top:1px solid #ddd;padding-top:15px;">🎓 Success with Wisdom!</div></div>`;
+      const html = `<div style="font-family:Arial,sans-serif;padding:30px;background:#fff;"><div style="text-align:center;border-bottom:3px solid #1a237e;padding-bottom:15px;margin-bottom:25px;"><h1 style="color:#1a237e;font-size:28px;">🏫 ABC DEMO SCHOOL SYSTEM</h1><h2 style="color:#f39c12;font-size:20px;">${title}</h2><p style="color:#666;font-size:12px;">Generated: ${new Date().toLocaleString()}</p></div><pre style="font-family:'Courier New',monospace;font-size:14px;white-space:pre-wrap;line-height:1.5;background:#f8f9fa;padding:20px;border-radius:8px;border:1px solid #e0e0e0;">${content}</pre><div style="text-align:center;color:#888;font-size:11px;margin-top:25px;border-top:1px solid #ddd;padding-top:15px;">🎓 Success with Wisdom!</div></div>`;
       const element = document.createElement('div');
       element.innerHTML = html;
       document.body.appendChild(element);
@@ -3612,7 +3612,7 @@
     // START
     // ====================================================================
     document.addEventListener('DOMContentLoaded', init);
-    console.log('LEADERS PUBLIC SCHOOL Premium v7.0');
+    console.log('ABC DEMO SCHOOL SYSTEM Premium v7.0');
     console.log('✅ Added: Saved Admissions tab with class-wise reports');
     console.log('✅ Fee rows connected to voucher system');
     console.log('✅ Auto-sum calculation for admission fees');
